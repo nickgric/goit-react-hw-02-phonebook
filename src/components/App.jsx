@@ -13,52 +13,52 @@ export class App extends Component {
     contacts: [
       {
         id: nanoid(),
-        name: generateName() + ' ' + '(example contact)',
+        name: `${generateName()} (example contact)`,
         number: '096-12345678',
       },
       {
         id: nanoid(),
-        name: generateName() + ' ' + '(example contact)',
+        name: `${generateName()} (example contact)`,
         number: '097-12345678',
       },
       {
         id: nanoid(),
-        name: generateName() + ' ' + '(example contact)',
+        name: `${generateName()} (example contact)`,
         number: '098-12345678',
       },
       {
         id: nanoid(),
-        name: generateName() + ' ' + '(example contact)',
+        name: `${generateName()} (example contact)`,
         number: '099-12345678',
       },
       {
         id: nanoid(),
-        name: generateName() + ' ' + '(example name)',
+        name: `${generateName()} (example contact)`,
         number: '099-12345678',
       },
       {
         id: nanoid(),
-        name: generateName() + ' ' + '(example contact)',
+        name: `${generateName()} (example contact)`,
         number: '099-12345678',
       },
       {
         id: nanoid(),
-        name: generateName() + ' ' + '(example contact)',
+        name: `${generateName()} (example contact)`,
         number: '099-12345678',
       },
       {
         id: nanoid(),
-        name: generateName() + ' ' + '(example contact)',
+        name: `${generateName()} (example contact)`,
         number: '099-12345678',
       },
       {
         id: nanoid(),
-        name: generateName() + ' ' + '(example contact)',
+        name: `${generateName()} (example contact)`,
         number: '099-12345678',
       },
       {
         id: nanoid(),
-        name: generateName() + ' ' + '(example contact)',
+        name: `${generateName()} (example contact)`,
         number: '099-12345678',
       },
     ],
