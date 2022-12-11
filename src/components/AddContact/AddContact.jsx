@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { nanoid } from 'nanoid';
+import PropTypes from 'prop-types';
 
 export class AddContact extends Component {
   state = {
@@ -55,3 +56,7 @@ export class AddContact extends Component {
     );
   }
 }
+
+AddContact.propTypes = {
+  submitHandler: PropTypes.array,
+};
