@@ -69,17 +69,16 @@ export class App extends Component {
     this.setState({ filter: input });
   };
 
-  addContact = (name, number, id) => {
+  addContact = newContact => {
+    if (this.state.contacts.find(contact => contact.name === newContact.name)) {
+      return alert(`${newContact.name} is already in contacts!`);
+    }
+
     this.setState(prevState => {
-      if (prevState.contacts.find(contact => contact.name === name)) {
-        alert(`${name} is already in contacts!`);
-        return;
-      } else {
-        const newState = {
-          contacts: [{ name, number, id }, ...prevState.contacts],
-        };
-        return newState;
-      }
+      const newState = {
+        contacts: [newContact, ...prevState.contacts],
+      };
+      return newState;
     });
   };
 

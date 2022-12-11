@@ -10,11 +10,12 @@ export class AddContact extends Component {
 
   submitHandler = event => {
     event.preventDefault();
-    const name = this.state.name;
-    const number = this.state.number;
+
+    const { name, number } = this.state;
+
     const id = nanoid();
 
-    this.props.addContact(name, number, id);
+    this.props.addContact({ name, number, id });
 
     event.target.reset();
   };
